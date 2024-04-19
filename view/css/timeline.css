@@ -1,0 +1,96 @@
+#red_bar{
+    background-color: #5d1111;
+    color:aliceblue;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+#searchbox{
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    color:aliceblue;
+    
+    
+}
+#profilepic{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+  
+    height: 150px;
+}
+#menu{
+    width: 100px;
+    
+    display:inline-block;
+    margin:2px;
+}
+#friends_img{
+    width: 75px;
+    float: left;
+    margin: 8px;
+    height:80px;
+}
+#friends_bar{
+    min-height: 400px;
+ 
+    margin-top: 20px;
+    color:white;
+    padding:8px;
+    border-radius: 10px;
+    text-align:center;
+    font-size:20px;
+    color: #5d1111
+
+}
+#friends{
+    clear:both;
+    font-size: 12px;
+    font-weight: bold;
+    color:orangered;
+}
+textarea{
+    width:100%;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 60px;
+}
+#post-button{
+    float:right;
+    background-color:#5d1111;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    width:50px;
+
+}
+#post_bar{
+    margin-top:20px;
+    background-color:aliceblue;
+    padding:10px;
+}
+#post{
+    padding:4px;
+    display:flex;
+
+    font-size: 12px;
+    font-weight: bold;
+    color:black;
+}
+#posts_images{
+    margin-right:4px;
+}
+#posters_name{
+    color: #5d1111;
+}
