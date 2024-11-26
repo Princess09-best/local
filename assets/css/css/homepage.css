@@ -1,0 +1,37 @@
+.nav-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    height:50px;
+    justify-content: center;
+}
+
+a{
+    position: relative;
+    cursor: pointer;
+    color:#efefee;
+    font-size: 28px;
+    padding: 0.5rem 1rem;
+    transition:color 0.25s;
+}
+
+a::after{
+    position: absolute;
+    content:"";
+    inset: 0;
+    background: rgba(165, 56, 56,100%);
+    scale: 1 0;
+    z-index : -1;
+    transition:0.45s;
+    border-radius : 10px;
+
+}
+
+a:hover{
+    color:white;
+}
+
+a:hover::after{
+    scale:1 1;}
+    

@@ -1,0 +1,110 @@
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:30px;
+    height:100px;
+    justify-content: center;
+    background-color: rgba(165, 56, 56,50%);
+    position:fixed;
+    padding: 0 10%;
+    backdrop-filter: blur(25px);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.image-logo {
+    height: 2rem;
+    width: 2rem;
+    max-height: 72px;
+    max-width: 250px;
+}
+a{
+    position: relative;
+    cursor: pointer;
+    color:black;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    transition:color 0.25s;
+}
+
+a::after{
+    position: absolute;
+    content:"";
+    inset: 0;
+    background: rgba(165, 56, 56,100%);
+    scale: 1 0;
+    z-index : -1;
+    transition:0.45s;
+    border-radius : 10px;
+
+}
+
+a:hover{
+    color:white;
+}
+
+a:hover::after{
+    scale:1 1;}
+.navigation{
+    display:flex;
+    gap: 1rem;
+}
+.navigation li{
+    list-style-type: none ;
+}
+
+input{
+    display: none;
+}
+
+.menu{
+    display:none;
+}
+
+@media screen and (max-width :952px){
+    .navigation{
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        background: rgba(0,0,0,0.65);
+        right:0;
+        padding: 0px 0px;
+        height: 0;
+        overflow: hidden;
+        transition: 500ms;
+    }
+
+
+input:checked ~ .navigation{
+    height:100vh;
+    width:60px;
+}
+
+.menu{
+    display: block;
+    width:60px;
+}
+.menu label{
+    width:60px;
+    height:60px;
+    position: absolute;
+    cursor:pointer;
+}
+
+.x-icon{
+    display:none;
+}
+input:checked ~ .menu .line-icon{
+    display:none;
+}
+input:checked ~.menu .x-icon{
+    display: block;
+}
+} 

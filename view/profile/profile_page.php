@@ -37,13 +37,13 @@ if (isset($_SESSION['ashesigram_user_id']) && is_numeric($_SESSION['ashesigram_u
     exit;
 }*/
 
-include("../../Classes/autoload.php");
-    $login = new Login();
-   $userdata =$login->check_login($_SESSION['ashesigram_user_id']);
+
+   
+   $userdata =checklogin_core($_SESSION['userid']);
    $USER = $userdata;
    $profile= new Profile();
    $profile_data = "";
-   if(isset($_GET['id']) && is_numeric($_GET['id']))//whitelisting on id
+   if(isset($_GET['userid']) && is_numeric($_GET['userid']))//whitelisting on id
    {
        $profile_data = $profile->get_profile($_GET['id']);
 }
